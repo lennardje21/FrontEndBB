@@ -1,69 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>CLE3</title>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Front-end one-pager</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
 </head>
+
 <body>
-        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-            <span class="sr-only">Menu</span>
+    <nav>
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
         </button>
-        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-            <li class="link">
-                <a href="#team">
-                    <span aria-hidden="true">•</span>Het Team
-                </a>
-            <li class="link">
-                <a href="#idee">
+        <ul id="primary-navigation" class="primary-navigation flex">
+            <!-- link naar het concept -->
+            <li>
+                <a href="#concept">
                     <span aria-hidden="true">•</span>Het Concept
                 </a>
-            <li class="link">
+
+            <!-- link naar het prototype -->
+            <li>
                 <a href="#prototypeSection">
                     <span aria-hidden="true">•</span>Prototype
                 </a>
+
+            <!-- link naar de teamleden -->
+            <li>
+                <a href="#team">
+                    <span aria-hidden="true">•</span>Het Team
+                </a>
         </ul>
+    </nav>
+
+    <header>
+        <img src="images/sbp.jpg" alt="schouwburgplein"/>
+    </header>
 
     <main>
-        <section id="team">
-            <div class="teamLid">
-                <p><b>Naam:</b><br>Lennard Touw</p>
-                <p><b>Student Nummer:</b><br>0990520</p>
-                <img width="200" height="200" src="images/placeholder.jpeg" alt="placeholder image"/>
-                <a class="gitHubLink" href="https://github.com/lennardje21" target="_blank"><img src="images/GitHub-Mark-32px.png" alt="Github Link"/> </a>
+        <section id="concept">
+            <h1 id="reposition">Concept</h1>
+            <div class="probleem">
+                <h3>Onderzoek</h3>
+                <p>
+                    Voor dit project zijn we naar Schouwburgplein geweest om te zien of we het inclusiever zouden kunnen maken.<br>
+                    Al snel viel ons op dat op veel van de bankjes tekeningen en uitspraken staan die eigenlijk helemaal niet kind/vrouw vriendelijk zijn.<br>
+                    Met inclusiviteit als uitgangspunt vonden we dit een mooi punt om mee aan het werk te gaan.
+                </p>
+                <img src="images/sbpBank1.jpg" alt="schouwburgplein bankjes met tekeningen"/>
+                <img src="images/sbpBank2.jpeg" alt="schouwburgplein bankje met teksten en tekeningen"/>
             </div>
-            <div class="teamLid">
-                <p><b>Naam:</b><br>Mark Hobbel</p>
-                <p><b>Student Nummer:</b><br>1031905</p>
-                <img width="200" height="200" src="images/placeholder.jpeg" alt="placeholder image"/>
-                <a class="gitHubLink" href="https://github.com/MarkajKING" target="_blank"><img src="images/GitHub-Mark-32px.png" alt="Github Link"/> </a>
-            </div>
-            <div class="teamLid">
-                <p><b>Naam:</b><br>Boy Kik</p>
-                <p><b>Student Nummer:</b><br>1026544</p>
-                <img width="200" height="200" src="images/placeholder.jpeg" alt="placeholder image"/>
-                <a class="gitHubLink" href="https://github.com" target="_blank"><img src="images/GitHub-Mark-32px.png" alt="Github Link"/> </a>
-            </div>
-            <div class="teamLid">
-                <p><b>Naam:</b><br>Bright Bawuah</p>
-                <p><b>Student Nummer:</b><br>1041097</p>
-                <img width="200" height="200" src="images/placeholder.jpeg" alt="placeholder image"/>
-                <a class="gitHubLink" href="https://github.com/brightbawuah" target="_blank"><img src="images/GitHub-Mark-32px.png" alt="Github Link"/> </a>
-            </div>
-        </section>
 
-        <section id="idee">
-            concept komt hier
+            <div class="oplossing">
+                <h3>Oplossing</h3>
+                <p>
+                    Wij hebben een app/site bedacht waar je kan zien of bankjes op Schouwburgplein vies zijn of niet, ook kan je de bankjes zelf vies melden<br>
+                    Wanneer je een bankje vies meld moet je een afbeelding uploaden om te laten zien dat het bankje echt vies is.<br>
+                    Na het doorgeven word er een melding bij de gemeente gemaakt en worden de bankjes schoongemaakt.
+                </p>
+
+            </div>
         </section>
 
         <section id="prototypeSection">
+            <h1>Het Prototype</h1>
             <div id="prototype">
-                <iframe src="https://xd.adobe.com/embed/a653c5c0-be83-4afc-95d2-8fe70c79244c-f300/?fullscreen&hints=off" frameborder="0" allowfullscreen></iframe>
-            </div>
+                <iframe src="https://xd.adobe.com/embed/a653c5c0-be83-4afc-95d2-8fe70c79244c-f300/?fullscreen&hints=off" frameborder="0" allowfullscreen></iframe>            </div>
         </section>
 
+        <section id="teamLeden">
+            <h1>Teamleden</h1>
+            <!-- Plaatjes zijn de github account profile pictures -->
+            <div id="team">
+                <div class="teamLid">
+                    <p><b>Naam:</b><br>Lennard Touw</p>
+                    <p><b>Student Nummer:</b><br>0990520</p>
+                    <img src="images/cat.jpg" alt="placeholder image"/>
+                    <a class="link" href="https://github.com/lennardje21" target="_blank">
+                        <img src="images/GitHub-Mark-32px.png" alt="Github Link"/>
+                    </a>
+                </div>
+                <div class="teamLid">
+                    <p><b>Naam:</b><br>Mark Hobbel</p>
+                    <p><b>Student Nummer:</b><br>1031905</p>
+                    <img src="images/Mark.png" alt="placeholder image"/>
+                    <a class="link" href="https://github.com/MarkajKING" target="_blank"><img src="images/GitHub-Mark-32px.png" alt="Github Link"/> </a>
+                </div>
+                <div class="teamLid">
+                    <p><b>Naam:</b><br>Boy Kik</p>
+                    <p><b>Student Nummer:</b><br>1026544</p>
+                    <img src="images/BoyKik.png" alt="placeholder image"/>
+                    <a class="link" href="https://github.com/BoyK99" target="_blank"><img src="images/GitHub-Mark-32px.png" alt="Github Link"/> </a>
+                </div>
+                <div class="teamLid">
+                    <p><b>Naam:</b><br>Bright Bawuah</p>
+                    <p><b>Student Nummer:</b><br>1041097</p>
+                    <img src="images/BrightBawuah.png" alt="placeholder image"/>
+                    <a class="link" href="https://github.com/brightbawuah" target="_blank"><img src="images/GitHub-Mark-32px.png" alt="Github Link"/> </a>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <b>Lennard Touw<br>0990520</b>
+    </footer>
+
 </body>
 </html>
+
+

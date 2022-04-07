@@ -1,7 +1,5 @@
-/* deze functie zorgt ervoor dat de navigatie in mobile versie kan in en uit klappen */
-
 const primaryNav = document.querySelector('.primary-navigation');
-const navToggle = document.querySelector('.mobile-nav-toggle');
+const navToggle = document.querySelector('.nav-toggle');
 
 navToggle.addEventListener('click', () => {
     const visibility = primaryNav.getAttribute('data-visible');
